@@ -1,0 +1,24 @@
+
+.mid-section{
+    height: 650px;
+
+}
+.first{
+    height:95%;
+    overflow: auto;
+                                                                 ;
+}
+.first::-webkit-scrollbar{
+     display: none;
+}
+.second{
+    height: 5%;
+    width: 100%;
+    
+}
+
+@media only screen and (min-width:0) and (max-width:720px){
+    .mid-section{
+        height: 600px;
+    }
+}
