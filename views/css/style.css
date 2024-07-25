@@ -6,6 +6,7 @@
 .first{
     height:95%;
     overflow: auto;
+    width: 100%;
                                                                  ;
 }
 .first::-webkit-scrollbar{
@@ -21,4 +22,36 @@
     .mid-section{
         height: 600px;
     }
+}
+
+/* @media only screen and (min-width:0) and (max-width:720px){
+
+    .left,.center, .right{
+    width: 60%;
+    clear: both;
+    margin-bottom: 8px;
+}
+.right{
+    float: right;
+}
+.left{
+    float: left;
+}
+} */
+
+
+.left,.center, .right{
+    width: 60%;
+    clear: both;
+    margin-bottom: 8px;
+}
+.right{
+    float: right;
+}
+.left{
+    float: left;
+}
+.center{
+    margin: auto;
+    margin-bottom: 8px;
 }
