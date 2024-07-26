@@ -1,4 +1,7 @@
-const io= require("socket.io")(8000)
+const io= require("socket.io")(8000,{
+    cors:"*"
+}
+)
 const users={}
 
 io.on("connect",(socket)=>{
