@@ -1,8 +1,11 @@
-const io= require("socket.io")(8000,{
+let io= require("socket.io")(8000,{
     cors:"http://localhost:5500"
+    
 }
 )
 const users={}
+console.log(users);
+
 
 io.on("connect",(socket)=>{
     socket.on("user-joined", (name)=>{
@@ -21,3 +24,4 @@ io.on("connect",(socket)=>{
         socket.broadcast.emit("user-left ",name)
     })
 })
+ 

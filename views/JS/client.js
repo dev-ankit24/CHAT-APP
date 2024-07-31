@@ -1,6 +1,6 @@
-const socket = io("http://localhost:8000")
+const socket = io('http://localhost:3000')
  
-const name= prompt("Enter the YOUR name to Join the chat :")
+let name= prompt( "Enter the YOUR name to Join the chat :")
 socket.emit("user-joined",name)
 
 let first =document.getElementById(".first")
