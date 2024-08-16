@@ -1,9 +1,9 @@
-const socket = io('http://localhost:3000')
+const socket = io("http://localhost:8000")
  
-let name= prompt( "Enter the YOUR name to Join the chat :")
+const name= prompt ("Enter the YOUR name to Join the chat :")
 socket.emit("user-joined",name)
 
-let first =document.getElementById(".first")
+var first =document.querySelector(".first")
 function generateMessage(side,message){
     let div= document.createElement("div")
 
@@ -21,7 +21,7 @@ function generateMessage(side,message){
         div.classList.add("alert-info")
         div.classList.add("center")
     }
-    first.append(div)
+    first.appendChild(div)
 }
 socket.on("new-user-joined", name=>{
     generateMessage("center", `${name} joined the chat`)

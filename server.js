@@ -1,12 +1,7 @@
 let io= require("socket.io")(8000,{
-    cors:"http://localhost:5500"
-    
-}
-)
+    cors:"http://localhost:5500"  
+})
 const users={}
-console.log(users);
-
-
 io.on("connect",(socket)=>{
     socket.on("user-joined", (name)=>{
         users[socket.id]=name

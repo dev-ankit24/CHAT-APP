@@ -50,8 +50,10 @@
 }
 .left{
     float: left;
+    text-align: left;
 }
 .center{
     margin: auto;
     margin-bottom: 8px;
+    text-align: center;
 }
