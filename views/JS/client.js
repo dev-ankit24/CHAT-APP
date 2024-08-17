@@ -14,7 +14,7 @@ function generateMessage(side,message){
         div.classList.add("left")
     }
     else if(side==="right"){
-        div.classList.add("alert.warning")
+        div.classList.add("alert-success")
         div.classList.add("right")
     }
     else{
