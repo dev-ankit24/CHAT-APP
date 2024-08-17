@@ -26,3 +26,13 @@ function generateMessage(side,message){
 socket.on("new-user-joined", name=>{
     generateMessage("center", `${name} joined the chat`)
 })
+
+// send input function 
+ function sendMessage(){
+    let input =document.getElementById("message")
+    if(input.value?.lenght){
+        generateMessage("right", `${input.value}: You`)
+        socket.emit("send",input.value)
+        input.value=""
+    }
+ }
