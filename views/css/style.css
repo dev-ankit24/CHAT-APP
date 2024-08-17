@@ -40,7 +40,17 @@
 } */
 
 
-.left,.center, .right{
+.left{
+    width: 60%;
+    clear: both;
+    margin-bottom: 8px;
+}
+.right{
+    width: 60%;
+    clear: both;
+    margin-bottom: 8px;
+}
+.center{
     width: 60%;
     clear: both;
     margin-bottom: 8px;
